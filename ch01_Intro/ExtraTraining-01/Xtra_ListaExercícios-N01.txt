@@ -1,0 +1,354 @@
+-------------------------------------------------------------------------------------------------------------------
+g) Ler dois valores numéricos inteiros (A e B) e efetuar as operações de adição, subtração e multiplicação de A por
+   B, apresentando ao final os três resultados obtidos.
+
+i) Ler dois valores numéricos (variável A e B) e efetuar as quatro operações matemáticas básicas, apresentando ao
+   final os resultados obtidos.
+-------------------------------------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+public class javatest{
+
+    public static void main(String[] args){
+
+        Scanner askUser = new Scanner(System.in);
+        System.out.println("Digite o valor de A: ");
+        int A = askUser.nextInt();
+        System.out.println("Digite o valor de B: ");
+        int B = askUser.nextInt();
+        askUser.close();
+
+        int adicao, subtracao, multiplicacao;
+        float divisao;
+        adicao = A+B;
+        subtracao = A-B;
+        multiplicacao = A*B;
+        divisao = (float) A/B;
+
+        System.out.println("Resultado da adição dos números: "+ adicao);
+        System.out.println("Resultado da subtração dos números: "+ subtracao);
+        System.out.println("Resultado da multiplicação dos números: "+ multiplicacao);
+        System.out.println("Resultado da divisão dos números: "+ divisao);
+
+    }
+
+}
+
+-------------------------------------------------------------------------------------------------------------------
+h) Efetuar a leitura de um número inteiro e apresentar o resultado do quadrado desse número.
+-------------------------------------------------------------------------------------------------------------------
+import java.util.Scanner;
+public class javatest{
+
+    public static void main(String[]args){
+
+        Scanner getNum = new Scanner(System.in);
+        System.out.print("Entre com um número inteiro: ");
+        int number = getNum.nextInt();
+        getNum.close();
+        // System.out.println("O quadrado do número é: "+number*number);
+        System.out.println("O quadrado do número é: "+squareRoot(number));
+
+    }
+
+    private static int squareRoot(int num){
+
+        return num*num;
+        //return (int) Math.pow(num, 2);
+
+    }
+
+}
+
+-------------------------------------------------------------------------------------------------------------------
+j) Efetuar o cálculo de uma raiz de base qualquer com índice qualquer.
+-------------------------------------------------------------------------------------------------------------------
+import java.util.Scanner;
+public class javatest{
+
+    public static void main(String[]args){
+
+        Scanner getNum = new Scanner(System.in);
+        System.out.print("Entre com um número inteiro base da potência: ");
+        int number = getNum.nextInt();
+        System.out.print("Informe o valor do expoente: ");
+        int expoente = getNum.nextInt();
+        getNum.close();
+        System.out.println();
+        System.out.println("O valor da potência é: "+squareRoot(number, expoente));
+
+    }
+
+    private static int squareRoot(int num, int pot){
+
+        return (int) Math.pow(num, pot);
+
+    }
+
+}
+
+-------------------------------------------------------------------------------------------------------------------
+m) Ler um valor numérico inteiro e apresentar como resultado os seus valores sucessor e antecessor.
+-------------------------------------------------------------------------------------------------------------------
+import java.util.Scanner;
+public class javatest{
+
+    public static void main(String[]args){
+
+        System.out.print("Dado um número inteiro qualquer, ");
+        System.out.println("vamos calcular seus antecessor e sucessor.");
+        Scanner userInput = new Scanner(System.in);
+        System.out.print("Informe um número inteiro qualquer: ");
+        int n = userInput.nextInt();
+        userInput.close();
+
+        antecessorSucessor(n);
+
+    }
+
+    private static void antecessorSucessor(int n){
+
+        int antecessor = n-1;
+        int sucessor = n+1;
+        System.out.println("Antecessor: " + antecessor);
+        System.out.println("Sucessor: " + sucessor);
+
+    }
+
+}
+
+-------------------------------------------------------------------------------------------------------------------
+e) Ler dois valores para as variáveis A e B, efetuar a troca dos valores de forma que a variável A passe a possuir o valor da variável B e que a variável B passe a possuir o valor da variável A. Apresentar os valores trocados.
+-------------------------------------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+public class TrocaValores{
+
+    public static void main(String[]args){
+
+        int A, B, varTroca;
+        Scanner askValue = new Scanner(System.in);
+        System.out.print("Entre um valor para a variável A: ");
+        A = askValue.nextInt();
+        System.out.print("Entre um valor para a variável B: ");
+        B = askValue.nextInt();
+        askValue.close();
+
+        System.out.println("A = "+A);
+        System.out.println("B = "+B);
+
+        System.out.println("Agora, vamos trocar os valores das variáveis!");
+
+        varTroca = A;
+        A = B;
+        B = varTroca;
+
+        System.out.println("O valor de A, agora é: "+A);
+        System.out.println("O valor de B, agora é: "+B);
+
+    }
+
+}
+
+-------------------------------------------------------------------------------------------------------------------
+d) Calcular e apresentar o valor do volume de uma lata de óleo, utilizando a fórmula VOLUME <- 3.14159 * RAIO^2 *
+   ALTURA.
+-------------------------------------------------------------------------------------------------------------------
+public class VolumeCilindro{
+
+    public static void main(String[]args){
+
+        System.out.println("O volume da lata é de: " + volCilinder(5.6, 9.4) + " cm³");
+        System.out.println("O volume da lata é de: " + volCilinder(3, 10) + " cm³");
+
+    }
+
+    public static double volCilinder(double diameter, double height){
+
+            final double PI = 3.14159;
+            double radius = diameter/2;
+            double areaCircle = radius*radius*PI;
+            double volumeCilinder = areaCircle * height;
+            return volumeCilinder;
+
+    }
+
+}
+-------------------------------------------------------------------------------------------------------------------
+l) Elaborar um programa que leia uma medida em pés e apresente o seu valor convertido em metros, lebrando que um pé mede 0,3048 metro, ou seja, um pé é igual a 30,48 centímetros.
+-------------------------------------------------------------------------------------------------------------------
+import java.util.Scanner;
+public class FeetToMeters{
+
+    public static void main(String[]args){
+
+        Scanner feetValue = new Scanner(System.in);
+        System.out.print("Qual o valor em pés a ser convertido para metros? ");
+        double feet = feetValue.nextDouble();
+        feetValue.close();
+        System.out.println("O valor de "+feet+" pés é igual a "+convertToMeter(feet)+" metros.");
+
+    }
+
+    public static double convertToMeter(double feet){
+        double meters = feet*0.3048;
+        return meters;
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------
+f) Efetuar o cálculo de uma prestação em atraso, utilizando a fórmula PRESTAÇÃO <- VALOR + (VALOR *(TAXA/100)*TEMPO).
+-------------------------------------------------------------------------------------------------------------------
+import java.util.Scanner;
+public class PrestacaoAtraso {
+
+
+    public static void main(String[]args){
+
+        Scanner askUser = new Scanner(System.in);
+        System.out.print("Informe o valor atual da prestação: ");
+        double valorPrestacao = askUser.nextDouble();
+        System.out.print("Informe a quantidade de dias em atraso: ");
+        int diasAtrasados = askUser.nextInt();
+
+        System.out.println("Valor re-calculado da prestação: " + valorPrestacao(valorPrestacao, diasAtrasados, 2.5));
+
+    }
+
+    // a) 'valor' é o valor da prestacao em atraso e prestacao é a nova prestacao com os juros calculados.
+    // b) 'diasAtraso' é o tempo de atraso da prestacao em dias - tipo inteiro.
+    // c) taxa de juros é dada ao mês e convertida para taxa diária dentro da fórmula a fim de permitir
+    // o cálculo diário do valor da prestação em atraso.
+
+    private static double valorPrestacao(double valor, int diasAtraso, double taxa){
+
+        double prestacao = valor+(valor*((taxa/30)/100)*diasAtraso);
+        return prestacao;
+
+    }
+
+}
+
+-------------------------------------------------------------------------------------------------------------------
+c) Ler o valor de uma temperatura em graus Fahrenheit e apresentá-la convertida em graus Celsius. A fórmula de conversão é C <- ((F-32)*5)/9, em que F é a temperatura em Fahrenheit e C é a temperatura em Celsius.
+-------------------------------------------------------------------------------------------------------------------
+import java.util.Scanner;
+public class FahrenheitCelsius{
+
+    public static void main(String[]args){
+
+        Scanner askTemp = new Scanner(System.in);
+        System.out.print("Qual a temperatura em Fahrenheit? ");
+        double Fahrenheit = askTemp.nextDouble();
+        askTemp.close();
+        System.out.println("Temperatura de "+Fahrenheit+" °F, equivale a "+convertToCelsius(Fahrenheit)+" °C");
+
+    }
+
+    public static double convertToCelsius(double Fahrenheit){
+
+        double Celsius = ((Fahrenheit-32)*5)/9;
+        return Celsius;
+
+    }
+
+}
+-------------------------------------------------------------------------------------------------------------------
+k) Ler o valor de uma temperatura em graus Celsius e apresentá-la convertida em graus Fahrenheit. A fórmula de conversão é F <- (9*C+160)/5, sendo F a temperatura em Fahrenheit e C a temperatura em Celsius.
+-------------------------------------------------------------------------------------------------------------------
+import java.util.Scanner;
+public class Ex006ConvertCelsiusFahrenheit{
+
+    public static void main(String[]args){
+
+        Scanner inputTemp = new Scanner(System.in);
+        System.out.print("Informe o valor da temperatura em Celsius: ");
+        double tempInCelsius = inputTemp.nextDouble();
+        inputTemp.close();
+        System.out.println(tempInCelsius+" °C equivale a " + convertToFahrenheit(tempInCelsius)+" °F.");
+
+    }
+
+    public static double convertToFahrenheit(double Celsius){
+
+        double Fahrenheit = (9*Celsius+160)/5;
+        return Fahrenheit;
+
+    }
+
+}
+-------------------------------------------------------------------------------------------------------------------------
+a) Ler quatro valores numéricos inteiros e apresentar o resultado das adições e das multiplicações utilizando o mesmo raciocínio aplicado quando do uso de propriedades distributivas para a máxima combinação possível entre as quatro variáveis. Não é para calcular a propriedade distributiva, apenas para usar a sua forma de combinação. Considerando a leitura dos valores para as variáveis A, B, C e D, devem ser feitas seis adições e seis multiplicações, ou seja, deve ser combinada a variável A com a variável B, a variável A com a variável C, a variável A com a variável D. Depois será necessário combinar a variável B com a variável C e a variável B com a variável D e, por fim, a variável C será combinada com a variável D.
+-------------------------------------------------------------------------------------------------------------------------
+import java.util.*;
+public class Javatest{
+
+    public static void main(String[]args){
+
+        int A, B, C, D;
+        System.out.println("Entre quatro valores numéricos inteiros: ");
+        Scanner inputVars = new Scanner(System.in);
+
+        A = inputVars.nextInt();
+        B = inputVars.nextInt();
+        C = inputVars.nextInt();
+        D = inputVars.nextInt();
+
+        inputVars.close();
+
+        System.out.println("Valores digitados para as variáveis: ");
+        System.out.println("A = "+A+", B = "+B+", C = "+C+", D = "+D);
+        System.out.println("A+B= "+(A+B));
+        System.out.println("A+C= "+(A+C));
+        System.out.println("A+D= "+(A+D));
+        System.out.println("B+C= "+(B+C));
+        System.out.println("B+D= "+(B+D));
+        System.out.println("C+D= "+(C+D));
+
+        System.out.println("Multiplicações: ");
+        System.out.println("A*B= "+(A*B));
+        System.out.println("A*C= "+(A*C));
+        System.out.println("A*D= "+(A*D));
+        System.out.println("B*C= "+(B*C));
+        System.out.println("B*D= "+(B*D));
+        System.out.println("C*D= "+(C*D));
+
+    }
+}
+-------------------------------------------------------------------------------------------------------------------------
+b) Efetuar o cálculo da quantidade de litros de combustível gasta em uma viagem, utilizando um automóvel que faz 12Km por litro. Para obter o cálculo, o usuário deve fornecer o tempo gasto (variável TEMPO) e a velocidade média (variável VELOCIDADE) durante a viagem. Desta forma, será possível obter a distância percorrida com a fórmula DISTÂNCIA <- TEMPO * VELOCIDADE. A partir do valor da distância, basta calcular a quantidade de litros de combustível utilizada na viagem com a fórmula LITROS_USADOS <- DISTÂNCIA / 12. O programa deve apresentar os valores da velocidade média, tempo gasto na viagem, a distância percorrida e a quantidade de litros utilizada na viagem.
+-------------------------------------------------------------------------------------------------------------------------
+import java.util.*;
+public class Javatest{
+
+    public static void main(String[]args){
+
+        Scanner askUser = new Scanner(System.in);
+        System.out.println("Informe a velocidade média durante a viagem (em km/h): ");
+        double velocidade = askUser.nextDouble();
+        System.out.println("Qual o tempo de duração da viagem? ");
+        double tempo = askUser.nextDouble();
+        askUser.close();
+        System.out.println("----------------------------------------------------------------------------");
+        System.out.println("- Tempo gasto na viagem: " + tempo + " hora(s).");
+        System.out.println("- A uma velocidade média de: " + velocidade + " km/h");
+        System.out.println("- A distância total percorrida: " + calcDistance(velocidade, tempo) + " km.");
+        System.out.println("- O total de combustível consumido na viagem: " + fuelConsumption(calcDistance(velocidade, tempo)) + " litros.");
+        System.out.println("============================================================================");
+
+    }
+
+    public static double calcDistance(double velocidade, double tempo){
+
+        double distancia = tempo * velocidade;
+        return distancia;
+    }
+
+    public static double fuelConsumption(double distancia){
+
+        double consumedFuel = distancia / 12;
+        return consumedFuel;
+    }
+}
+
+=============================================================================================================================
