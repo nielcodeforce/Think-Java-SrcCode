@@ -1,15 +1,15 @@
 # Think Java source code.
 
 <p> This repository is a collection of a small part of the source code from a great book for learning java as a self taught programmer!
-The book is 'Think Java' by Allen Downey and Chris Mayfieldand. The code I uploaded here is not complete and may differ a little bit
+The book is <strong>'Think Java' by Allen Downey and Chris Mayfieldand</strong>. The code I uploaded here is not complete and may differ a little bit
 from the original in the book once I made some modifications to it as I was trying the code and making some testing with diffent 
 ideas and ways to implement it. It's also not complete as I included only the first 8 chapters. Below I provide the links to the book's 
 official web site and original source code:</p>
 
-<p>[OFFICIAL WEB SITE]</p>
+<p><strong>[OFFICIAL WEB SITE]</strong></p>
 <p>You can check the book out in the book's official web site: https://books.trinket.io/thinkjava2/</p>
 
-<p>[PRINTED EDITION BY O'REILLY]
+<p><strong>[PRINTED EDITION BY O'REILLY]</strong></p>
 <p>You can also obtain a printed version of the book at https://www.oreilly.com/ or www.amazon.com if you prefer.</p>
 
 <p>[SOURCE CODE]</p>
