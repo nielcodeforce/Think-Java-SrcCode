@@ -8,7 +8,7 @@ It's also not complete - only the first 8 chapters. Below I provide the links to
 <p><strong>[OFFICIAL WEB SITE]</strong></p>
 <p>You can check the book out in its official web site: https://books.trinket.io/thinkjava2/</p>
 
-<p><strong>[PRINTED EDITION BY O'REILLY]</strong></p>
+<h1>[PRINTED EDITION BY O'REILLY]</h1>
 <p>You can also obtain a printed version of the book at https://www.oreilly.com/ or www.amazon.com if you prefer.</p>
 
 <p><strong>[SOURCE CODE]</strong></p>
@@ -19,6 +19,6 @@ language. If you're an experienced Java programmer that's a different story, but
 the code for yourself as you progress through the lessons in the book and do as much code exercises as you can.</p>
 
 <p>By the way, why would you mind these files if you can get the originals? Just as a means of exercise and learning by comparison. You try the code on your own and check
-yours with the one I provided so you can compare your solutions and experimentation with someone else's ideas. <br>Of course, all that assuming you already did the same with the code examples in the book.</p>
+yours with the one I provided so you can compare your solutions and experimentation with someone else's ideas. Of course, all that assuming you already did the same with the code examples in the book.</p>
 
 <p>Enjoy it and good luck!</p>
