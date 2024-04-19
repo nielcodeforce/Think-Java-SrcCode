@@ -5,13 +5,13 @@ The book is <strong>'Think Java' by Allen Downey and Chris Mayfieldand</strong>.
 from the originals once I made some modifications to them as I was trying the code and making some testing with different ideas and ways to implement it.
 It's also not complete - only the first 8 chapters. Below I provide the links to the book's official web site and source code:</p>
 
-<h2>[OFFICIAL WEB SITE]</h2>
+<h3>[OFFICIAL WEB SITE]</h3>
 <p>You can check the book out in its official web site: https://books.trinket.io/thinkjava2/</p>
 
-<h2>[PRINTED EDITION BY O'REILLY]</h2>
+<h3>[PRINTED EDITION BY O'REILLY]</h3>
 <p>You can also obtain a printed version of the book at https://www.oreilly.com/ or www.amazon.com if you prefer.</p>
 
-<h2>[SOURCE CODE]</h2>
+<h3>[SOURCE CODE]</h3>
 <p>The source code official repository is the following: https://github.com/AllenDowney/ThinkJavaCode. <br>Or you can download the complete source in a zipped file (also official): http://tinyurl.com/ThinkJavaCodeZip</p>
 
 <p>Although you can get the entire source code I always suggest that you type it for yourself even if you already know how to program in another 
