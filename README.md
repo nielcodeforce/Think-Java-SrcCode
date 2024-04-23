@@ -9,7 +9,7 @@ It's also not complete - only the first 8 chapters. Below I provide the links to
 <p>You can check the book out in its official web site: https://books.trinket.io/thinkjava2/</p>
 
 <h3>[PRINTED EDITION BY O'REILLY]</h3>
-<p>If you prefer you can obtain a printed version of the book at <a href="https://www.oreilly.com/library/view/think-java-2nd/9781492072492/" target="_blank"></a></p>
+<p>If you prefer you can obtain a printed version of the book at https://www.oreilly.com/library/view/think-java-2nd/9781492072492/</p>
 
 <h3>[SOURCE CODE]</h3>
 <p>The source code official repository is the following: https://github.com/AllenDowney/ThinkJavaCode <br>Or you can download the complete source in a zipped file (also official): http://tinyurl.com/ThinkJavaCodeZip</p>
